@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>EXO CORP GOD MODE - Red & Black Edition</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <i class="fas fa-dragon"></i>
+                <span>EXO</span>
+            </div>
+            <div class="preloader-progress">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="preloader-text">LOADING DARK GOD MODE</div>
+        </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="gradient-bg"></div>
+    <canvas id="particle-canvas"></canvas>
+    <canvas id="star-canvas"></canvas>
+    <div class="noise-overlay"></div>
+    <div class="blood-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-dragon"></i>
+                </div>
+                <span class="logo-text">EXO<span class="logo-accent">CORP</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">HOME</a>
+                <a href="#products" class="nav-link">DARK TOOLS</a>
+                <a href="#features" class="nav-link">DARK POWERS</a>
+                <a href="#testimonials" class="nav-link">SHADOWS SPEAK</a>
+                <a href="#faq" class="nav-link">DARK TEXTS</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-discord">
+                    <i class="fab fa-discord"></i>
+                    <span>JOIN THE DARK</span>
+                </button>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-skull"></i>
+                    <span>DARK GOD TIER EXPERIENCE</span>
+                </div>
+                
+                <div class="hero-title-container">
+                    <h1 class="hero-title">
+                        <div class="title-line">
+                            <span class="gradient-text glitch-text" data-text="BECOME">BECOME</span>
+                            <span class="outline-text glitch-text" data-text="A">A</span>
+                        </div>
+                        <div class="title-line">
+                            <span class="gradient-text glitch-text" data-text="DARK">DARK</span>
+                            <span class="outline-text glitch-text" data-text="GOD">GOD</span>
+                        </div>
+                    </h1>
+                </div>
+                
+                <p class="hero-subtitle">
+                    Unleash dark divine power with our god-tier gaming tools. Ascend beyond mortal limits 
+                    and dominate the battlefield with unstoppable dark force.
+                </p>
+                
+                <!-- MOTIVATION CARD -->
+                <div class="motivation-card-fixed">
+                    <div class="motivation-glow"></div>
+                    <div class="motivation-content-fixed">
+                        <div class="motivation-icon-wrapper">
+                            <i class="fas fa-crown motivation-icon"></i>
+                            <div class="icon-pulse"></div>
+                        </div>
+                        <div class="motivation-text-fixed">
+                            <div class="motivation-push">"BECOME DARK"</div>
+                            <div class="motivation-limit">GOD STATUS</div>
+                        </div>
+                        <div class="motivation-stats-fixed">
+                            <div class="stat-badge">
+                                <i class="fas fa-trophy"></i>
+                                <span>#1 DARK RANK</span>
+                            </div>
+                            <div class="stat-badge">
+                                <i class="fas fa-fire"></i>
+                                <span>1M+ KILLS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="motivation-progress">
+                        <div class="progress-fill"></div>
+                        <div class="progress-text">YOUR DARK JOURNEY STARTS NOW →</div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary">
+                        <span>CLAIM DARK POWER</span>
+                        <i class="fas fa-skull"></i>
+                    </button>
+                    <button class="btn-secondary">
+                        <i class="fas fa-play"></i>
+                        <span>WATCH DARK DEMO</span>
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100000">0</div>
+                        <div class="stat-label">DARK GODS</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">POWER %</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="247">0</div>
+                        <div class="stat-label">DARK SUPPORT</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50000">0</div>
+                        <div class="stat-label">+ DARK SOULS</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="floating-cube"></div>
+                <div class="floating-cube"></div>
+                <div class="floating-cube"></div>
+                <div class="hero-glow"></div>
+                <div class="dark-circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="section-header">
+            <div class="section-tag">
+                <i class="fas fa-crown"></i>
+                <span>DARK TIER COLLECTION</span>
+            </div>
+            <h2 class="section-title">DARK <span class="gradient-text">GAMING PANELS</span></h2>
+            <p class="section-subtitle">Choose your dark weapon and ascend to dark godhood</p>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card premium" data-product="freefire">
+                <div class="product-badge">DARK TIER</div>
+                <div class="product-image">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">FREE FIRE DARK MODE</h3>
+                    <p class="product-description">Complete dark panel with godly aimbot, ESP, and ultimate features</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Dark Aimbot</span>
+                        <span><i class="fas fa-check"></i> Dark ESP</span>
+                        <span><i class="fas fa-check"></i> Immortal Anti-Ban</span>
+                        <span><i class="fas fa-check"></i> Dark Headshot</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price-current">$49.99</span>
+                        <span class="price-original">$199.99</span>
+                    </div>
+                    <button class="btn-product">
+                        <span>CLAIM DARK POWER</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card featured" data-product="aimbot">
+                <div class="product-badge">DARK DIVINE</div>
+                <div class="product-image">
+                    <i class="fas fa-crosshairs"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">AIMBOT DARK PRO</h3>
+                    <p class="product-description">Dark godly aimbot with dark AI prediction and perfect tracking</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Dark AI</span>
+                        <span><i class="fas fa-check"></i> Dark Silent Aim</span>
+                        <span><i class="fas fa-check"></i> Dark Trigger</span>
+                        <span><i class="fas fa-check"></i> Perfect Control</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price-current">$34.99</span>
+                        <span class="price-original">$149.99</span>
+                    </div>
+                    <button class="btn-product">
+                        <span>CLAIM DARK POWER</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card" data-product="esp">
+                <div class="product-badge">DARK OMEGA</div>
+                <div class="product-image">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">ESP DARK MASTER</h3>
+                    <p class="product-description">Complete dark ESP suite with dark godly vision and infinite range</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> Dark Vision ESP</span>
+                        <span><i class="fas fa-check"></i> Dark Items</span>
+                        <span><i class="fas fa-check"></i> Dark Distance</span>
+                        <span><i class="fas fa-check"></i> Dark Health</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price-current">$29.99</span>
+                        <span class="price-original">$129.99</span>
+                    </div>
+                    <button class="btn-product">
+                        <span>CLAIM DARK POWER</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card ultimate" data-product="bundle">
+                <div class="product-badge">DARK ALMIGHTY</div>
+                <div class="product-image">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">DARK ALMIGHTY BUNDLE</h3>
+                    <p class="product-description">All dark tools + eternal updates + dark VIP support</p>
+                    <div class="product-features">
+                        <span><i class="fas fa-check"></i> All Dark Products</span>
+                        <span><i class="fas fa-check"></i> Eternal Updates</span>
+                        <span><i class="fas fa-check"></i> Dark VIP Support</span>
+                        <span><i class="fas fa-check"></i> Dark Methods</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price-current">$149.99</span>
+                        <span class="price-original">$599.99</span>
+                    </div>
+                    <button class="btn-product">
+                        <span>CLAIM DARK POWER</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <div class="section-tag">
+                <i class="fas fa-skull"></i>
+                <span>DARK POWERS</span>
+            </div>
+            <h2 class="section-title">DARK <span class="gradient-text">ADVANTAGES</span></h2>
+            <p class="section-subtitle">Experience the power of dark gods with our dark features</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="feature-title">DARK IMMORTAL</h3>
+                <p class="feature-description">Dark anti-detection that makes you invincible</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="feature-title">DARK SPEED</h3>
+                <p class="feature-description">Lightning fast dark performance with zero lag</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 class="feature-title">24/7 DARK HELP</h3>
+                <p class="feature-description">Dark support team ready to serve anytime</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3 class="feature-title">ETERNAL DARK</h3>
+                <p class="feature-description">Free dark updates forever, no sacrifice needed</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="feature-title">DARK AI</h3>
+                <p class="feature-description">Machine learning algorithms from the dark gods</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3 class="feature-title">DARK PAYMENT</h3>
+                <p class="feature-description">Darkly encrypted transactions with dark protection</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <div class="section-tag">
+                <i class="fas fa-comment-dots"></i>
+                <span>SHADOWS SPEAK</span>
+            </div>
+            <h2 class="section-title">WHAT THE <span class="gradient-text">DARK SAY</span></h2>
+            <p class="section-subtitle">Join thousands of ascended dark gamers worldwide</p>
+        </div>
+
+        <div class="testimonials-slider">
+            <div class="testimonials-track">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User">
+                        <div class="avatar-status"></div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I have ascended to dark godhood! The aimbot is darkly smooth and I've become immortal!"</p>
+                        <div class="testimonial-author">
+                            <h4>Alex DarkSlayer</h4>
+                            <span>Dark Player</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User">
+                        <div class="avatar-status"></div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"From mortal to DARK GOD in one week! The ESP features gave me dark vision!"</p>
+                        <div class="testimonial-author">
+                            <h4>Sarah DarkGoddess</h4>
+                            <span>Dark Competitor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="User">
+                        <div class="avatar-status"></div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The Dark Almighty Bundle made me a DARK GOD! Eternal updates and dark VIP support!"</p>
+                        <div class="testimonial-author">
+                            <h4>Mike The Dark</h4>
+                            <span>Dark Creator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots"></div>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="section-header">
+            <div class="section-tag">
+                <i class="fas fa-question-circle"></i>
+                <span>DARK KNOWLEDGE</span>
+            </div>
+            <h2 class="section-title">DARK <span class="gradient-text">QUESTIONS</span></h2>
+            <p class="section-subtitle">Everything you need to know about your dark powers</p>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is this dark power safe to use?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Our dark tools use advanced dark anti-detection technology and are eternally updated to ensure maximum safety. Thousands of dark gods use our powers with zero bans reported.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I receive my dark powers?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Immediately after your dark purchase, you'll receive a dark download link and dark license key via email. You'll also gain access to our dark Discord server.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do you offer dark refunds?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer a 7-day dark money-back guarantee if the dark power doesn't work as promised. Contact our dark support team for assistance.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How often are dark updates released?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We release dark updates within 24-48 hours after any game patch. Eternal customers get all updates for free, forever.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What dark payment methods do you accept?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We accept PayPal, Credit/Debit Cards, Cryptocurrency (BTC, ETH, USDT), and many other dark payment methods.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do you provide dark customer support?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We have 24/7 dark support via Discord and email. Dark VIP customers get priority support with instant response times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2 class="cta-title">READY TO <span class="gradient-text">BECOME DARK GOD?</span></h2>
+            <p class="cta-subtitle">Join thousands of ascended dark gamers who already have dark powers</p>
+            <div class="cta-buttons">
+                <button class="btn-primary">
+                    <span>ASCEND TO DARK</span>
+                    <i class="fas fa-skull"></i>
+                </button>
+                <button class="btn-discord-large">
+                    <i class="fab fa-discord"></i>
+                    <span>JOIN DARK COMMUNITY</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fas fa-dragon"></i>
+                    <span>EXOCORP</span>
+                </div>
+                <p>Dark gaming tools for the chosen ones. Ascend beyond mortal limits.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>DARK TOOLS</h4>
+                    <a href="#">Free Fire Dark Mode</a>
+                    <a href="#">Aimbot Dark Pro</a>
+                    <a href="#">ESP Dark Master</a>
+                    <a href="#">Dark Almighty Bundle</a>
+                </div>
+                <div class="footer-column">
+                    <h4>DARK SUPPORT</h4>
+                    <a href="#">Dark Docs</a>
+                    <a href="#">Dark Tutorials</a>
+                    <a href="#">Dark FAQ</a>
+                    <a href="#">Contact Dark</a>
+                </div>
+                <div class="footer-column">
+                    <h4>DARK LAWS</h4>
+                    <a href="#">Dark Terms</a>
+                    <a href="#">Dark Privacy</a>
+                    <a href="#">Dark Refund</a>
+                    <a href="#">Dark DMCA</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EXO CORP. All rights reserved. | Ascend to Dark Godhood</p>
+        </div>
+    </footer>
+
+    <!-- Purchase Modal -->
+    <div class="modal" id="purchase-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-skull"></i> Claim Your Dark Power</h3>
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="product-details">
+                    <div class="product-icon" id="modal-product-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="product-info">
+                        <h4 id="modal-product-name">FREE FIRE DARK MODE</h4>
+                        <p id="modal-product-price">$49.99</p>
+                    </div>
+                </div>
+
+                <div class="total-amount-section">
+                    <div class="total-amount-box">
+                        <div class="total-label">
+                            <i class="fas fa-tag"></i>
+                            <span>DARK TOTAL</span>
+                        </div>
+                        <div class="total-price" id="total-amount">
+                            $49.99
+                        </div>
+                        <div class="total-note">
+                            <i class="fas fa-infinity"></i>
+                            <span>Eternal dark access • One dark payment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-methods-section">
+                    <h4><i class="fas fa-hand-sparkles"></i> Select Dark Payment</h4>
+                    <div class="payment-options-grid">
+                        <div class="payment-option-card active" data-payment="paypal">
+                            <i class="fab fa-paypal"></i>
+                            <span>PayPal</span>
+                        </div>
+                        <div class="payment-option-card" data-payment="crypto">
+                            <i class="fab fa-bitcoin"></i>
+                            <span>Cryptocurrency</span>
+                        </div>
+                        <div class="payment-option-card" data-payment="card">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Credit/Debit Card</span>
+                        </div>
+                        <div class="payment-option-card" data-payment="bank">
+                            <i class="fas fa-university"></i>
+                            <span>Bank Transfer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="payment-forms-container">
+                    <div class="payment-form" id="paypal-form">
+                        <div class="form-group">
+                            <label><i class="fab fa-paypal"></i> PayPal Email *</label>
+                            <input type="email" id="paypal-email" placeholder="your-dark-email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-user-astronaut"></i> Dark Name *</label>
+                            <input type="text" id="paypal-name" placeholder="Your Dark Name" required>
+                        </div>
+                    </div>
+
+                    <div class="payment-form" id="crypto-form" style="display: none;">
+                        <div class="crypto-addresses">
+                            <div class="crypto-option">
+                                <i class="fab fa-bitcoin"></i>
+                                <span>Bitcoin (BTC)</span>
+                                <div class="crypto-address">1DarkGodModeDivinePower</div>
+                                <button class="copy-address" data-address="1DarkGodModeDivinePower">
+                                    <i class="fas fa-copy"></i> Copy Dark Address
+                                </button>
+                            </div>
+                            <div class="crypto-option">
+                                <i class="fab fa-ethereum"></i>
+                                <span>Ethereum (ETH)</span>
+                                <div class="crypto-address">0xDarkGodModeDivinePower</div>
+                                <button class="copy-address" data-address="0xDarkGodModeDivinePower">
+                                    <i class="fas fa-copy"></i> Copy Dark Address
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-hashtag"></i> Dark Transaction ID *</label>
+                            <input type="text" id="crypto-txid" placeholder="Enter dark transaction ID">
+                        </div>
+                    </div>
+
+                    <div class="payment-form" id="card-form" style="display: none;">
+                        <div class="form-group">
+                            <label><i class="fas fa-user-astronaut"></i> Dark Cardholder Name *</label>
+                            <input type="text" id="card-name" placeholder="Your Dark Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-credit-card"></i> Dark Card Number *</label>
+                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label><i class="fas fa-calendar"></i> Dark Expiry *</label>
+                                <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5" required>
+                            </div>
+                            <div class="form-group half">
+                                <label><i class="fas fa-lock"></i> Dark CVV *</label>
+                                <input type="text" id="card-cvv" placeholder="123" maxlength="4" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-form" id="bank-form" style="display: none;">
+                        <div class="bank-details">
+                            <h4><i class="fas fa-university"></i> Dark Bank Details</h4>
+                            <div class="bank-info">
+                                <p><strong>Bank Name:</strong> Dark Bank of Gods</p>
+                                <p><strong>Account Holder:</strong> EXO CORP LLC</p>
+                                <p><strong>Account Number:</strong> 666666666</p>
+                                <p><strong>SWIFT Code:</strong> DARKSWIFT66</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-file-invoice"></i> Dark Reference Number *</label>
+                            <input type="text" id="bank-ref" placeholder="Enter dark reference number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer-details-section">
+                    <h4><i class="fas fa-user-astronaut"></i> Your Dark Identity</h4>
+                    <div class="form-group">
+                        <label><i class="fas fa-user-astronaut"></i> Your Dark Name *</label>
+                        <input type="text" id="customer-name" placeholder="Enter your dark name" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Dark Email *</label>
+                        <input type="email" id="customer-email" placeholder="your-dark-email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> Dark Phone</label>
+                        <input type="tel" id="customer-phone" placeholder="+1 234 567 8900">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-map-marker-alt"></i> Dark Address *</label>
+                        <textarea id="customer-address" rows="3" placeholder="Enter your dark address" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label><i class="fas fa-city"></i> Dark City</label>
+                            <input type="text" id="customer-city" placeholder="Dark City">
+                        </div>
+                        <div class="form-group half">
+                            <label><i class="fas fa-code"></i> Dark Code</label>
+                            <input type="text" id="customer-zip" placeholder="Dark Zip">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-globe"></i> Dark Realm</label>
+                        <select id="customer-country">
+                            <option value="">Select Dark Realm</option>
+                            <option value="US">Dark United States</option>
+                            <option value="UK">Dark United Kingdom</option>
+                            <option value="CA">Dark Canada</option>
+                            <option value="AU">Dark Australia</option>
+                            <option value="IN">Dark India</option>
+                            <option value="PK">Dark Pakistan</option>
+                            <option value="AE">Dark UAE</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="terms-checkbox">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">
+                        I agree to the <a href="#" class="terms-link">Dark Terms of Service</a> and <a href="#" class="terms-link">Dark Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button class="btn-checkout" id="submit-payment">
+                    <span>CLAIM DARK POWER</span>
+                    <i class="fas fa-skull"></i>
+                </button>
+                
+                <div class="secure-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Dark Protection - God Level Encryption</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
